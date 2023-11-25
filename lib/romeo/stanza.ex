@@ -125,7 +125,7 @@ defmodule Romeo.Stanza do
     xmlel(
       name: "auth",
       attrs: [
-        {"xmlns", ns_sasl},
+        {"xmlns", ns_sasl()},
         {"mechanism", mechanism}
       ],
       children: []
@@ -136,7 +136,7 @@ defmodule Romeo.Stanza do
     xmlel(
       name: "auth",
       attrs: [
-        {"xmlns", ns_sasl},
+        {"xmlns", ns_sasl()},
         {"mechanism", mechanism}
       ],
       children: [body]
