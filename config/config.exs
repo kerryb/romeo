@@ -4,7 +4,7 @@ config :ex_unit, :assert_receive_timeout, 2000
 
 config :logger, level: :debug
 
-config :mnesia, dir: 'mnesia'
+config :mnesia, dir: ~c"mnesia"
 
 config :sasl, sasl_error_logger: false
 
